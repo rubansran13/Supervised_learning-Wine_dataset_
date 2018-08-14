@@ -4,6 +4,13 @@ Wine data set(available at University of California Machine Learning Repository:
 
 To check presence of multicolinearity Variance Inflation Analysis is done, which shows high Variance Inflation Factor(VIF) for density that of 21 and few other variable have VIF near 10, thus requiring action and for which Principle Component Analysis(PCA) was performed.
 
+![Alt Text](Variance_Inflation_Factor.png?raw=true "Checking Multicolinearity")
+
+
+![Alt Text](PCA_Variance_Explained.png?raw=true "Variance explained by Principle Components")
+
+
+
 Different Linear Methods were applied-Linear Regression,Lasso Regression,Ridge Regression and Elastic Net. Along with thse regression analysis was performed by using Random Forest Regression,Support Vector Regression and Logistic Regression.
 
 Hyperparameter for models used are selected through cross validation and regression is performed on the data that is transformed into Principle Components.
