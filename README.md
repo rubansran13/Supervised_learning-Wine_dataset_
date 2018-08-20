@@ -6,12 +6,16 @@ The data is split into train set and test set in 3:1 ratio. To avoid any snoopin
 
 ![Alt Text](Wine_Characteristics_Correlation_Heatmap(Train_set).png?raw=true "Correlation Heatmap")
 
+
 Several features shows higher degree of correlaiton-free sulfur dixide eith total sulfur dioxide; total sulfur dioxide, free sulfur dixide and density with residual sugar. Thus Variance Inflation Analysis is done to know the degree of multicollinearity. THis analysis shows high Variance Inflation Factor(VIF) for density that of 21 and few other variable have VIF near 10, thus requiring action for dealing with multicollinearity and thus, Principle Component Analysis(PCA) was performed.
+
 
 ![Alt Text](Variance_Inflation_Factor.png?raw=true "Checking Multicolinearity")
 
 
 ![Alt Text](PCA_Variance_Explained.png?raw=true "Variance explained by Principle Components")
+
+
 The first 10 principle components explains ~99 percent of the variance. Thus the standardized training set and test set are transformed using thses 10 components
 
 Different Linear Methods were applied-Linear Regression,Lasso Regression,Ridge Regression and Elastic Net. Along with thse regression analysis was performed by using Random Forest Regression,Support Vector Regression and Logistic Regression. Accuracy Scores are also included in regression model performance along with mean squared error and r2 score. Accuracy scores were calculated using rounding function where (X.5,Y.5] was converted to Y, where X and Y are integers and Y=X+1. Using rounding, calculating accuracy score was possible as it reduced the regression predicted values to integer values which could be treated as classes of classification.
