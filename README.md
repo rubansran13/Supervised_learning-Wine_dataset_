@@ -1,6 +1,6 @@
 # Predictive_analysis_of_Wine_dataset_
 
-Wine data set(available at University of California Machine Learning Repository:https://archive.ics.uci.edu/ml/datasets/Wine+Quality) is analyzed using regression and classification models. Dataset has 6497 instances, of which Red Wine dataset has   instances and White Wine with 4898 instances, which have been combined and color of wine is also used as a feature for estimation of wine quality.
+Wine data set(available at University of California Machine Learning Repository:https://archive.ics.uci.edu/ml/datasets/Wine+Quality) is analyzed using regression and classification models. Dataset has 6497 instances, of which Red Wine dataset has  1599 instances and White Wine with 4898 instances, which have been combined and color of wine is also used as a feature for estimation of wine quality.
 
 The data is split into train set and test set in 3:1 ratio. To avoid any snooping into test set, it is not used for any analysis. To check presence of multicolinearity, first a correlation heatmap is drawn on the train set.
 
