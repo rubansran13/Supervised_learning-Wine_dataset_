@@ -9,7 +9,7 @@ Wine quality target presents the problem of imbalanced data where wine quality m
 
 The data is split into train set and test set in 3:1 ratio. To avoid any snooping into test set, it is not used for any analysis. To check presence of multicolinearity, first a correlation heatmap is drawn on the train set.
 
-![Alt Text](Wine_Characteristic_Correlation Heatmap(Train set).png?raw=true "Correlation Heatmap")
+![Alt Text](Wine_Characteristic_Correlation_Heatmap(Train set).png?raw=true "Correlation Heatmap")
 
 
 Several features shows higher degree of correlaiton-free sulfur dixide eith total sulfur dioxide; total sulfur dioxide, free sulfur dixide and density with residual sugar. Thus Variance Inflation Analysis is done to know the degree of multicollinearity. THis analysis shows high Variance Inflation Factor(VIF) for density that of 21 and few other variable have VIF near 10, thus requiring action for dealing with multicollinearity and thus, Principle Component Analysis(PCA) was performed.
