@@ -1,0 +1,7 @@
+,Model,Train Accuracy Score,Test Accuracy Score
+0,Gaussian Naive Bayes,0.5164203612479474,0.4996923076923077
+1,Logistic Regression,0.583743842364532,0.5827692307692308
+2,Decision Tree Classifier,0.9751642036124795,0.6203076923076923
+3,K Neighbors Classifier,1.0,0.7187692307692307
+4,Random Forest Classifier,1.0,0.7175384615384616
+5,Support Vector Classifier,0.7432266009852216,0.6283076923076923
