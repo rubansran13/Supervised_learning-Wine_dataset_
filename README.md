@@ -12,19 +12,19 @@ The data is split into train set and test set in 3:1 ratio. To avoid any snoopin
 ![Alt Text](Wine_Characteristic_Correlation_Heatmap(Train_set).png?raw=true "Correlation Heatmap")
 
 
-Several features shows higher degree of correlaiton-free sulfur dixide eith total sulfur dioxide; total sulfur dioxide, free sulfur dixide and density with residual sugar. Thus Variance Inflation Analysis is done to know the degree of multicollinearity. THis analysis shows high Variance Inflation Factor(VIF) for density that of 21 and few other variable have VIF near 10, thus requiring action for dealing with multicollinearity and thus, Principle Component Analysis(PCA) was performed.
+Several features shows higher degree of correlaiton-free sulfur dixide eith total sulfur dioxide; total sulfur dioxide, free sulfur dixide and density with residual sugar. Thus Variance Inflation Analysis is done to know the degree of multicollinearity. THis analysis shows high Variance Inflation Factor(VIF) for density that of 21 and few other variable have VIF near 10, thus requiring action for dealing with multicollinearity and thus, Principal Component Analysis(PCA) was performed.
 
 
 ![Alt Text](Variance_Inflation_Factor.png?raw=true "Checking Multicolinearity")
 
 
-![Alt Text](PCA_Variance_Explained.png?raw=true "Variance explained by Principle Components")
+![Alt Text](PCA_Variance_Explained.png?raw=true "Variance explained by Principal Components")
 
 
-The first 10 principle components explains ~99 percent of the variance. Thus the standardized training set and test set are transformed using thses 10 components
+The first 10 principal components explains ~99 percent of the variance. Thus the standardized training set and test set are transformed using thses 10 components
 
 
-For classification Gaussian Naive Bayes,Logistic Regression, Decision Tree, K Nearest Neighbours, Random Forest Classifier and Support Vector Classification are used. Hyperparameter selection for models is done through cross validation and analysis is performed on the data that is transformed into Principle Components.
+For classification Gaussian Naive Bayes,Logistic Regression, Decision Tree, K Nearest Neighbours, Random Forest Classifier and Support Vector Classification are used. Hyperparameter selection for models is done through cross validation and analysis is performed on the data that is transformed into Principal Components.
 
 Classification analysis, Random Forest and K Nearest Neighbours give the best results with accuracy of 0.71 on three class classification problem. 
 
